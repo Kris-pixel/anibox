@@ -1,0 +1,91 @@
+
+p{
+    font-size: 18px;
+}
+ .col-12 .dropdown .btn{
+    background: #676fa3;
+    color: #fff;
+} 
+.comments .comment, #make-comment{
+    background: #cddeff;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-top: 5px;
+    min-width: 450px;
+}
+.col-11 p{
+    white-space: normal;
+}
+
+#mark{
+	font-size: 24px;
+	color: #e25454;
+	font-weight: 700;
+}
+
+
+
+/*звезды*/
+.rating-result {
+	width: 265px;
+	margin: 0 auto;
+}
+.rating-result span {
+	padding: 0;
+	font-size: 32px;
+	margin: 0 3px;
+	line-height: 1;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-result > span:before {
+	content: '★';
+}
+.rating-result > span.active {
+	color:  #e25454;
+	text-shadow: 1px 1px #c60;
+}
+
+
+
+/*звезды кнопочки*/
+.rating-area {
+	overflow: hidden;
+	width: 215px;
+	margin: 0;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 42px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 32px;
+	line-height: 32px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: #e25454;
+	text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: #e25454;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: #e25454;
+	text-shadow: 1px 1px #e25454;
+}
+.rate-area > label:active {
+	position: relative;
+}

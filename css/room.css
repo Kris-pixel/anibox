@@ -1,0 +1,31 @@
+
+.container .row .card{
+    margin: auto;
+    height: 240px;
+    width: 200px;
+    padding: 0;
+    border: #cddeff solid 4px;
+    background-color: #cddeff;
+}
+.stat, #send-photo{
+    border-radius: 5px;
+    border: #cddeff solid 4px;
+    background-color: #cddeff;
+    padding: 10px 20px;
+    min-width: 100px;
+    margin: 0  15px 10px 15px;
+}
+
+.card .card-footer .exit{
+    color: #ff5959;
+    text-decoration: none;
+    font-size: 18px;
+}
+.card .card-footer .exit:hover{
+    color: #676fa3;
+}
+
+#exit, .photo, #btn-del{
+    background-color: #ff5959;
+    border: transparent;
+}

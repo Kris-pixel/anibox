@@ -1,0 +1,51 @@
+.btn.buttons, .btn-sm.buttons{
+    background-color: #676fa3;
+    color:#fff;
+}
+.btn.buttons:hover, .btn-sm.buttons:hover{
+    color:#676fa3;
+    background-color: transparent;
+    font-weight: 400;
+    outline: #676fa3 solid 1px;
+}
+.btn.outline{
+    color:#676fa3;
+    font-weight: 500;
+    outline: #676fa3 solid 1px;
+}
+.btn.outline:hover{
+    color:#fff;
+    background-color: #676fa3;
+}
+#menu, #footer{
+    background-color:#cddeff;
+    color: #fff;
+    padding: 0px 40px;
+}
+#menu{
+    border-radius: 0 0 10px 10px;
+}
+#footer{
+    border-radius: 10px 10px 0 0;
+}
+.text-end .rounded{
+	margin-right:5px;
+}
+.text-end a{
+	text-decoration: none;
+	color:#676fa3;
+	display: block;
+}
+
+.list-title{
+    background-color: #676fa3;
+    color: #fff;
+    border-radius: 10px;
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+.container.content-place{
+    min-height: 80vh;
+}
+

@@ -1,0 +1,52 @@
+
+/* для регистрац формы */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  /* background: #eef2ff; */
+}
+.text-center.image{
+  background: url("../imgs/form_bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+.form-floating label{
+  color: #676fa3;
+}
+
+.form-signin input{
+  margin-bottom: 5px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn.buttons{
+  margin-top: 10px;
+}
+
+
+.form-signin.signin{
+  background-color: #cddeff;
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+.form-signin.signin h1{
+  color: #676fa3;
+}

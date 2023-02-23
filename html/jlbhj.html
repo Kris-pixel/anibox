@@ -1,0 +1,78 @@
+<tr class='user_rate'>
+    <td><span>$index</span></td>
+    <td class='name'>
+      <a href='title_info.php?title=$arrname[$i]'><span class='name-ru'>$arrname[$i]</span></a>
+    </td>
+    <td class='text-center' style='width:100px;'>
+      <span class='current-value'>$arrmarks[$i]</span>
+    </td>
+    <td class='num text-center' style='width:100px;'><span class='current-value'><span>$arrwatched[$i]</span></span><span class='misc-value'><span class='b-separator inline'>/</span>$arrepisoddes[$i]</span>
+    </td>
+    <td class='num text-end' style='width:100px;'><button type='button' class='btn-sm buttons edit'>Изменить</button></td>
+</tr>
+<tr class='editform' style='display: none;'><td>
+    <form id='make-comment' class='col-12' >
+        <div class='form-group'>
+            <label for='name'>Логин:<span id='reply'></span></label><br>
+            <label for='message'>Коммнетарий: </label>
+            <textarea class='form-control h-25' id='message'></textarea>
+        </div>
+        <div class='text-end'>
+            <button type='button' class='btn buttons w-10' id='sendComment' disabled='true' >Отправить</button>
+        </div>
+    </form>
+    </td>
+</tr>
+
+
+
+
+
+<tr class='editform' id='$index'><td colspan='5' class='w-100'>
+    <form class='simple_form b-form rate-edit' id='edit_user_rate_86229920' action='' method='post'>
+    <input name='utf8' type='hidden' value='✓'>
+    <input type='hidden' name='_method' value='patch'>
+    <input type='hidden' name='authenticity_token' value='H0uDBAhoYjRKyf06FCznlZW9kzdoXhb+ds3jVQ8x/pgKYjOFQD8Rxumn3Jqe3PP7sfTj1r+HXP+zkVzDi9EPVA=='><div class='delete-button top hidden'><a class='remove' data-method='delete' data-remote='true' data-type='json' href='https://shikimori.one/api/user_rates/86229920?frontend=true' title='Удалить из списка'>Удалить из списка</a></div>
+    <div class='b-input select optional user_rate_score'>
+    <label class='select optional control-label' for='user_rate_score'>Оценка</label>
+    <select class='select optional' name='user_rate[score]' id='user_rate_score'>
+        <option value=''></option>
+        <option value='1'>(1) Хуже некуда</option>
+        <option value='2'>(2) Ужасно</option>
+        <option value='3'>(3) Очень плохо</option>
+        <option value='4'>(4) Плохо</option>
+        <option value='5'>(5) Более-менее</option>
+        <option value='6'>(6) Нормально</option>
+        <option value='7'>(7) Хорошо</option>
+        <option value='8'>(8) Отлично</option>
+        <option value='9'>(9) Великолепно</option>
+        <option value='10'>(10) Эпик вин!</option>
+        </select></div><div class='b-input integer optional user_rate_episodes'><label class='integer optional control-label' for='user_rate_episodes'>Эпизоды</label><input min='0' max='999' class='numeric integer optional' type='number' step='1' value='0' name='user_rate[episodes]' id='user_rate_episodes'></div><div class='b-input select required user_rate_status'><label class='select required control-label' for='user_rate_status'><abbr title='Обязательное поле'>*</abbr> Статус</label><select class='select required' name='user_rate[status]' id='user_rate_status'><option selected='selected' value='planned'>Запланировано</option>
+        <option value='watching'>Смотрю</option>
+        <option value='rewatching'>Пересматриваю</option>
+        <option value='completed'>Просмотрено</option>
+        <option value='on_hold'>Отложено</option>
+        <option value='dropped'>Брошено</option></select></div><div class='b-input integer optional user_rate_rewatches'><label class='integer optional control-label' for='user_rate_rewatches'>Кол-во повторных просмотров</label><input min='0' class='numeric integer optional' type='number' step='1' value='0' name='user_rate[rewatches]' id='user_rate_rewatches'></div><div class='b-input text optional user_rate_text'><label class='text optional control-label' for='user_rate_text'>Комментарий</label><textarea class='text optional' name='user_rate[text]' id='user_rate_text'></textarea></div><div class='buttons'><div class='b-js-link cancel'>Отмена</div><input type='submit' name='commit' value='Сохранить' class='btn-primary btn-submit btn' data-disable-with='Сохранение…' id='submit_user_rate_712' autocomplete='off' tabindex='0'></div><a class='remove bottom' data-method='delete' data-remote='true' data-type='json' href='https://shikimori.one/api/user_rates/86229920?frontend=true' title='Удалить из списка'>Удалить из списка</a></form></td>
+  </tr>
+
+
+
+  <form class="form-inline" action="/action_page.php">
+    <div class="form-group">
+        <label for="list">Список:</label>
+        <select class="form-control" id="list">
+            <option></option>
+        </select>
+      </div>
+    <div class="form-group">
+      <label for="mark">Оценка:</label>
+      <input type="number" id="mark" name="tentacles" min="1" max="5">
+    </div>
+    <div class="form-group">
+      <label for="wctd">Просмотрено:</label>
+      <input type="number" id="wctd" name="wctd" min="1" max="5">
+      <label for="pwd"> серий из <span></span></label>
+    </div>
+    <button type="button" class="btn btn-default">Удалить из списка</button>
+    <button type="submit" class="btn btn-default">Готово</button>
+  </form>
